@@ -318,10 +318,9 @@ odwierty_w_zakresie_glebokosci(X, Y, Z) :-
 % ?- odwierty_w_kraju(north_atlantic_ocean,Y).
 % Y = [odw9].
 %
-% ?- odwierty_w_kraju(united_states,Y).
-% Y = [odw1, odw2, odw3, odw4].
-% ?- odwierty_w_kraju(china,Y).
-% Y = [odw5].
-% ?- odwierty_w_kraju(north_atlantic_ocean,Y).
-% Y = [odw9].
-%
+% ?- odwierty_w_zakresie_glebokosci(1500,2500,Y).
+% Y = [odw1, odw5, odw6, odw8, odw9].
+% ?- odwierty_w_zakresie_glebokosci(500,1500,Y).
+% Y = [odw7, odw10].
+% ?- odwierty_w_zakresie_glebokosci(2500,3500,Y).
+% Y = [odw2, odw3, odw4, odw5, odw6].
